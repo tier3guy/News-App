@@ -7,7 +7,7 @@ function Card(props){
       <div className="card-body">
         <h5 className="card-title">{props.name}</h5>
         <p className="card-text">{props.title}</p>
-        <a href={props.url} className="btn btn-primary">Read Original Article</a>
+        <button onClick = {props.func} className="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Read More</button>
       </div>
     </div>
   )

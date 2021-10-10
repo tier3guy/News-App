@@ -23,3 +23,15 @@
 .btn-primary:hover{
   background: var(--dark-lighter);
 }
+
+.offcanvas{
+  height: 40vh;
+  background: var(--background-dark);
+  color: var(--main);
+  border-top: 4px solid var(--main);
+}
+
+
+.offcanvas-body, .offcanvas-header{
+  padding: 15px 50px;
+}
