@@ -1,5 +1,6 @@
 import './App.css';
-import Card from './Components/Card';
+import Footer from './Components/Footer';
+import Loader from './Components/Loader';
 import SearchBar from './Components/SearchBar';
 
 function App() {
@@ -8,11 +9,8 @@ function App() {
       <div className = "container">
         <h1 className = "text-center mt-3">Welcome to Newster</h1>
         <SearchBar/>
-        <div className= "container mt-4">
-          <Card/>
-          <Card/>
-          <Card/>
-        </div>
+        <Loader/>
+        <Footer/>
       </div>
     </div>
   );

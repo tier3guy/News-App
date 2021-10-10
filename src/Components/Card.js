@@ -1,10 +1,13 @@
 import React from 'react'
 
-function Card() {
+function Card(props){ 
   return (
-    <div className = "card">
-      <div className = "card-body">
-        <h5 className = "card-tittle">Education</h5>
+    <div className = "card p-0 custom-grid-item">
+      <img src={props.urlToImage} className="card-img-top" alt="Image Loading .."/>
+      <div className="card-body">
+        <h5 className="card-title">{props.name}</h5>
+        <p className="card-text">{props.title}</p>
+        <a href={props.url} className="btn btn-primary">Read Original Article</a>
       </div>
     </div>
   )

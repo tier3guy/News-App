@@ -1,3 +1,46 @@
 .card{
   width: 20em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background: var(--main);
+  color: var(--background-dark);
+}
+
+.custom-container{
+  display: grid;
+  grid-gap: 20px 10px;
+  grid-template-columns: auto auto auto;
+  padding-left: 50px;
+}
+
+.input-group-text, .input-group-text:hover{
+  color: var(--main);
+}
+
+.btn-primary{
+  background: var(--dark-secondary);
+}
+.btn-primary:hover{
+  background: var(--dark-lighter);
+}
+
+.loader{
+  height: 100px;
+  width: 100px;
+  margin: auto;
+  background: var(--background-dark);
+  position: absolute;
+  z-index: 999;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  border-radius: 50%;
+  border: 10px solid var(--dark-lighter);
+  border-top: 10px solid var(--main);
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
