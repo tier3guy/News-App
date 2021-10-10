@@ -29,8 +29,6 @@ function SearchBar(){
       let date = get__date();
       let data_text = await get_data(subject,date); 
       await setArticle(data_text.articles);
-      console.log(data_text.articles);
-      //console.log(article);
     }
   }
 

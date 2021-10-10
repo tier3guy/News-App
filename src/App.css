@@ -10,9 +10,10 @@
   grid-gap: 20px 10px;
   grid-template-columns: auto auto auto;
   padding-left: 50px;
+  z-index: 99;
 }
 
-.input-group-text, .input-group-text:hover{
+.input-group-text, .input-group-text:hover , .text-color{
   color: var(--main);
 }
 
@@ -21,26 +22,4 @@
 }
 .btn-primary:hover{
   background: var(--dark-lighter);
-}
-
-.loader{
-  height: 100px;
-  width: 100px;
-  margin: auto;
-  background: var(--background-dark);
-  position: absolute;
-  z-index: 999;
-  top: 50%;
-  left: 50%;
-  margin-left: -50px;
-  margin-top: -50px;
-  border-radius: 50%;
-  border: 10px solid var(--dark-lighter);
-  border-top: 10px solid var(--main);
-  animation: spin 1.5s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
