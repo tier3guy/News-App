@@ -10,6 +10,8 @@ function App() {
         <SearchBar/>
         <div className= "container mt-4">
           <Card/>
+          <Card/>
+          <Card/>
         </div>
       </div>
     </div>
