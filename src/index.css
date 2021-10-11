@@ -17,6 +17,7 @@
 }
 
 body{
+  border-top: 4px solid var(--main);
   background: var(--background-dark);
 }
 
